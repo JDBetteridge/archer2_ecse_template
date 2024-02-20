@@ -1,0 +1,99 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage[cm]{fullpage}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage[bookmarks]{hyperref}
+\usepackage{ifthen}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+
+\setmainfont[Ligatures=TeX]{DejaVu Sans}
+\setsansfont[Ligatures=TeX]{DejaVu Sans}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\title{}
+\author{}
+\date{\today}
+\pagestyle{empty}
+
+\hypersetup
+{
+    pdfauthor={},
+    pdftitle={eCSE Proposal},
+    colorlinks={true},
+    urlcolor={blue},
+}
+\urlstyle{same}
+
+\pagestyle{fancy}
+\setlength{\topmargin}{-3.5cm}
+\setlength{\headheight}{2.5cm}
+\setlength{\headsep}{0.5cm}
+\lhead{\hspace{-5em}\includegraphics[width=4cm]{logos/epcc_logo.png}}
+\chead{\includegraphics[width=5cm]{logos/ed_logo.png}\hspace{2em}\includegraphics[width=4cm]{logos/archer2_logo.png}}
+\rhead{\includegraphics[width=4cm]{logos/ukri_logo.png}\hspace{-5em}}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{}
+
+%\newcommand{\sect}[1]{\section{#1}}
+%\newcommand{\ssect}[1]{\vspace{-0.5em}\subsection*{#1}\vspace{-0.5em}}
+%\newcommand{\hrules}{\vspace{1pt}\hrule\vspace{2pt}}
+%{\renewcommand{\arraystretch}{1.1}
+
+\let\OLDthebibliography\thebibliography
+\renewcommand\thebibliography[1]{
+  \OLDthebibliography{#1}
+  \setlength{\parskip}{0pt}
+  \setlength{\itemsep}{0pt plus 0.3ex}
+}
+
+% Ensure you are using XeLaTeX to compile this document!
+\begin{document}
+\begin{center}
+\huge \textbf{Proposal for a GPU eCSE Application}\\
+\end{center}
+Applicants for a GPU eCSE application should use this template.\\
+
+\noindent This GPU eCSE call will close at 16:00 on Tuesday 19 March 2024. No applications will be accepted after this time.\\
+
+\noindent Please note:
+\begin{itemize}
+	\item There is a hard page limit for each section which is shown at the start of each section. 
+	\item The font size should be no smaller than 11pt and the margins should be no smaller than 2.5cm. 
+\end{itemize}
+
+\noindent Please upload your proposal when you fill in your eCSE application online form via the eCSE Funding Calls section within the SAFE: \url{https://safe.epcc.ed.ac.uk/}.\\
+
+\noindent Please read the Applications Guidance (linked in to the page \url{https://www.archer2.ac.uk/ecse/calls/}) for further instructions on how to complete your eCSE online application.\\
+
+\noindent If you have any queries or require assistance regarding your application, please contact the ARCHER2 service desk: \url{support@archer2.ac.uk}.
+
+\section{Project Title (as given in on-line SAFE form)}
+
+\section{PI Name and Institution}
+
+\clearpage
+\section{Description of code(s) (max. 2 page)}
+
+\clearpage
+\section{Project Objectives and success metrics (max. 1 page)}
+
+\clearpage
+\section{Project Overview, Technical Information and Workplan (max. 2 pages)}
+
+\clearpage
+\section{Sustainability, maintenance, validation and {{availability}} of codes (max. 1 page)}
+
+\clearpage
+\section{Impact and Benefits (max. 1 page)}
+
+
+\end{document}
